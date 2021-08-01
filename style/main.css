@@ -1,0 +1,131 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/*elementos base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .container{
+    border: 1px solid black;
+    display: flex;                    /*display:flex; -- transforma tudo em linha*/
+    
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{             /*hover- ao passar o mouse na palavra elea muda de cor*/
+    color: #fff;
+}
+
+/*Filmes principais*/
+.filme-principal{
+    font-size: 18px;
+    background: linear-gradient(rgba(0,0,0,.50)), rgba(0,0,0,.50)100%, url('/img/capa1.jpg'); /*---cria uma camada fina "escura" na imagem*/
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+
+.titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;                                         /*transition cuida da parte de trasição de uma coisa a outra*/
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+}
+
+.trailer{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;                                         /*transition cuida da parte de trasição de uma coisa a outra*/
+}
+
+.trailer:hover{
+    background-color: white;
+    color: black;
+}
+
+.trailer i{
+    margin-right: 8px;
+}

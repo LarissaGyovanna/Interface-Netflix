@@ -1,0 +1,46 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/*elementos base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .container{
+    border: 1px solid black;
+    display: flex;                    /*display:flex; -- transforma tudo em linha*/
+    
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+.filme-principal{
+    font-size: 100%;
+    background-image: url('/img/capa2.jpg');
+
+    height: 100%;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
